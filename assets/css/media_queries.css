@@ -1,0 +1,106 @@
+/* ======================   
+    Media Queries
+=======================*/
+
+/* ======================   
+    Breakpoint >600px
+=======================*/
+
+@media only screen and (max-width: 600px) {
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header div:nth-of-type(1) {
+        height: 20vh;
+    }
+
+    header div img {
+        width: 100%;
+        aspect-ratio: 16/10;
+    }
+    
+    main #navleiste nav {
+        display: none;
+    }
+
+    main #navleiste div {
+        display: block;
+        /* flex-direction: column; */
+    }
+
+    main #navleiste div {
+        padding: 13px 20px;
+        background-color: black;
+    }
+
+    main #ourstory {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    main #ourstory img {
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+
+    main #featured #featured_pics  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main #featured #featured_pics img {
+        width: 80%;
+        margin: 28px auto;
+    }
+
+    main #getintouch {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main #getintouch div:nth-of-type(1) {
+        width: 60vw;
+        text-align: center;
+    }
+
+    main #getintouch div form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    main #getintouch div form {
+        width: 60vw;
+        
+    }
+
+    main #getintouch div form label{
+        color: white;
+        font-size: 1.4rem;
+    }
+    
+    main #getintouch div form input{
+        width: 30vw;
+        margin-bottom: 15px;
+    }
+
+    main #getintouch div form textarea {
+        width: 50vw;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+    /* footer {
+        display: flex;
+        align-items: center;
+    } */
+}
